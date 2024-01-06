@@ -76,22 +76,27 @@ h2.title {
 .income-area .transaction-amount {
     color: rgb(19, 200, 108);
     font-weight: bold;
+    justify-content: center;
+    align-self: center;
 }
 
 .expenses-area h3,
 .expenses-area .transaction-amount {
     color: rgb(255, 104, 104);
     font-weight: bold;
+    justify-content: center;
+    align-self: center;
 }
 
-.transaction {
+.transaction, .transaction2 {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--border-color);
 }
 
-.transaction:last-child {
+.transaction2 {
+    justify-content: flex-start;
     border-bottom: none;
 }
 
@@ -115,6 +120,10 @@ h2.title {
 
 .delete:hover {
     transform: scale(.8);
+}
+
+.delete i {
+    pointer-events: none;
 }
 
 .options {
